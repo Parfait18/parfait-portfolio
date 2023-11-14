@@ -2,13 +2,9 @@ export default function BLog () {
 
 return (
 
-	<div>
-
-		<h1> This is the blog page </h1>
-
-
-	</div>
-
+	<main className="flex min-h-screen flex-col items-center justify-between p-24">
+	<h1> This is blog page </h1>
+</main>
 )
 
 }

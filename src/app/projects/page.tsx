@@ -1,8 +1,8 @@
 export default function Projects () {
   return (
-<div> 
-	<h1>   This is project page </h1>
-</div>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <h1> This is projects page </h1>
+</main>
 
 )
 

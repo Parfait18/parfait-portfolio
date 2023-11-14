@@ -1,10 +1,9 @@
 export default function Serices(){
 
 return (
-	<div>
-		<h1> this is services pages </h1>
-
-	</div>
+	<main className="flex min-h-screen flex-col items-center justify-between p-24">
+	<h1> This is services page </h1>
+</main>
 	
 )
 }

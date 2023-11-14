@@ -34,7 +34,7 @@ export default function Hedaer() {
               href="/"
               className={
                 pathname == "/"
-                  ? "transition duration-700 ease-in-out  mr-3 inline-block py-1 px-3 bg-blue-500 text-white rounded-sm shadow-sm"
+                  ? "transition duration-700 shadow-lg ease-in-out  mr-3 inline-block py-1 px-3 bg-blue-500 text-white rounded-sm"
                   : "transition duration-700 ease-in-out  mr-3 inline-block py-1 px-3  text-blue-500"
               }
             >

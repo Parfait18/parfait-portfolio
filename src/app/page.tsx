@@ -46,9 +46,7 @@ export default function Home() {
             />
           <div className="absolute animate-pulse bottom-4 right-8 shadow-md bg-gray-500 h-16 w-16 rounded-md"></div>
         </div>
-        <div className="h-96">
-
-        </div>
+        
       </div>
     </main>
   );
