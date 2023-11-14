@@ -11,6 +11,7 @@
   "dependencies": {
     "next": "14.0.2",
     "react": "^18",
+    "react-compare-image": "^3.4.0",
     "react-dom": "^18",
     "react-tsparticles": "^2.12.2",
     "tsparticles": "^2.12.0",
