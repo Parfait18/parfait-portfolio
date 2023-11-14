@@ -15,7 +15,7 @@ export default function Home() {
           {/* <div className=" text-justify md:w-4/6 w-4/6 mx-auto text-center text-3xl text-blue-700">
             Parfait AHOUANTO
           </div> */}
-          <div className="text-4xl text-left p-8 w-full h-28 text-gray-600">
+          <div className="md:text-4xl  text-2xl text-left p-8 w-full h-28 text-gray-600">
             <TypeWriter content={"Hi! I'm Parfait AHOUANTO <br/>I'm Fullstack developer"} /> 
           
           </div>
