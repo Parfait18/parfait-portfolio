@@ -10,7 +10,7 @@ export default function Hedaer() {
   const pathname = usePathname();
   return (
     <div>
-      <div className="p-4  inline-flex justify-between w-full h-18">
+      <div className="px-8 py-3 inline-flex justify-between w-full h-18">
         <div className="inline-flex p-4">
           <div className="my-auto text-2xl">
             <span className="text-gray-600 font-weight-light"> AHOUANTO </span>

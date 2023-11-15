@@ -10,13 +10,10 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="flex flex-col h-screen items-center justify-between">
-      <div className="w-full space-y-4 grid md:grid-cols-2 grid-cols-1">
-        <div className="space-y-4">
-          {/* <div className=" text-justify md:w-4/6 w-4/6 mx-auto text-center text-3xl text-blue-700">
-            Parfait AHOUANTO
-          </div> */}
-          <div className="md:text-4xl mb-16 text-2xl text-left p-8 w-full h-20 text-gray-600">
+    <main className="flex flex-col h-min-screen items-center p-4">
+      <div className="w-full space-y-8 grid md:grid-cols-2 grid-cols-1">
+        <div className="space-y-4 grid-cols-1">
+          <div className="md:text-4xl mb-16 text-2xl text-left p-8 w-full h-28 text-gray-600">
             <TypeWriter
               content={"Hi! I'm Parfait AHOUANTO <br/>I'm Fullstack developer"}
             />
@@ -27,9 +24,28 @@ export default function Home() {
             professional career has allowed me to acquire enough experience in
             the implementation and development of information’s systems.
           </p>
-          <div className="m-8 w-48 py-3 hover:cursor-pointer shadow-md  justify-center text-center bg-blue-500 text-white inline-flex items-center px-2 rounded-md">
-            <span> Get Resume </span>
-            <ArrowDownTrayIcon width={24} className="text-white ml-2" />
+          <div className="px-8 py-4 w-full">
+            <div className=" w-48 py-3 hover:cursor-pointer shadow-md  justify-center text-center border border-blue-500 hover:text-white hover:bg-blue-500 text-blue-500 inline-flex items-center px-2 rounded-md">
+              <span> View Resume </span>
+              <ArrowDownTrayIcon width={24} className="ml-2" />
+            </div>
+          </div>
+
+          <div className="inline-flex px-8 justify-between">
+            <Image
+              src="/icons/github.svg"
+              alt="github_img"
+              width={50}
+              height={50}
+              className="static mx-2 w-46 h-46  hover:cursor-pointer rounded-full"
+            />
+            <Image
+              src="/icons/linkedin.svg"
+              alt="linkedin_img"
+              width={50}
+              height={50}
+              className="static mx-2 w-46 h-46  hover:cursor-pointer rounded-full"
+            />
           </div>
         </div>
         <div className="md:w-1/2 p-8 w-full  h-96 mx-auto mt-12 relative ">
