@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import Link from "next/link";
@@ -30,54 +31,77 @@ export default function Hedaer() {
         </div>
         <div className="md:inline-flex hidden">
           <div className="flex my-auto">
-            <Link
-              href="/"
-              className={
-                pathname == "/"
-                  ? "transition duration-700 shadow-lg ease-in-out  mr-3 inline-block py-1 px-3 bg-blue-500 text-white rounded-sm"
-                  : "transition duration-700 ease-in-out  mr-3 inline-block py-1 px-3  text-blue-500"
-              }
-            >
-              {" "}
-              Home
-            </Link>
-            <Link
-              className="transition duration-700 ease-in-out  mr-3 inline-block    py-1 px-3  text-blue-500"
-              href="/resume"
-            >
-              {" "}
-              Resume
-            </Link>
-            <Link
-              className="transition duration-700 ease-in-out  mr-3 inline-block    py-1 px-3  text-blue-500"
-              href="/services"
-            >
-              {" "}
-              Services
-            </Link>
+            <div>
+              <Link
+                href="/"
+                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+              >
+                {" "}
+                Home
+              </Link>
+              {pathname == "/" && (
+                <div className="w-6 ml-3 bg-blue-500 h-1.5 rounded-md"></div>
+              )}
+            </div>
+            <div>
+              <Link
+                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+                href="/resume"
+              >
+                {" "}
+                Resume
+              </Link>
+              {pathname == "/resume" && (
+                <div className="w-6 ml-3 bg-blue-500 h-1.5 rounded-md"></div>
+              )}
+            </div>
 
-            <Link
-              className="mr-3 inline-block    py-1 px-3  text-blue-500"
-              href="/projects"
-            >
-              {" "}
-              Projects
-            </Link>
+            <div>
+              <Link
+                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+                href="/services"
+              >
+                Services
+              </Link>
+              {pathname == "/services" && (
+                <div className="w-6 ml-3 bg-blue-500 h-1.5 rounded-md"></div>
+              )}
+            </div>
 
-            <Link
-              className="mr-3 inline-block    py-1 px-3 text-blue-500"
-              href="/blog"
-            >
-              {" "}
-              Blog
-            </Link>
-            <Link
-              className="mr-3 inline-block    py-1 px-3  text-blue-500"
-              href="/contact"
-            >
-              {" "}
-              Contact
-            </Link>
+            <div>
+              <Link
+                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+                href="/projects"
+              >
+                {" "}
+                Projects
+              </Link>
+              {pathname == "/projects" && (
+                <div className="w-6 ml-3 bg-blue-500 h-1.5 rounded-md"></div>
+              )}
+            </div>
+            <div>
+              <Link
+                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+                href="/blog"
+              >
+                Blog
+              </Link>
+              {pathname == "/blog" && (
+                <div className="w-6 ml-3 bg-blue-500 h-1.5 rounded-md"></div>
+              )}
+            </div>
+            <div>
+              <Link
+                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+                href="/contact"
+              >
+                Contact
+              </Link>
+              {pathname == "/contact" && (
+                <div className="w-6 ml-3 bg-blue-500 h-1.5 rounded-md"></div>
+              )}
+            </div>
           </div>
         </div>
       </div>
