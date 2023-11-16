@@ -84,7 +84,7 @@ export default function Hedaer() {
                 <div className="w-6 ml-3 bg-blue-500 h-1.5 rounded-md"></div>
               )}
             </div>
-            <div>
+            {/* <div>
               <Link
                 className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
                 href="/blog"
@@ -94,7 +94,7 @@ export default function Hedaer() {
               {pathname == "/blog" && (
                 <div className="w-6 ml-3 bg-blue-500 h-1.5 rounded-md"></div>
               )}
-            </div>
+            </div> */}
             <div>
               <Link
                 className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"

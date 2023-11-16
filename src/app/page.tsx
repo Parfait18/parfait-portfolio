@@ -1,10 +1,10 @@
 import Image from "next/image";
 import TypeWriter from "./components/TypeWriter";
 import { Metadata } from "next";
-import { template } from "./constants/title-helper";
-import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
+import { template } from "./utils/constants";
 import GithubIcon from "./components/icons/GithubIcon";
 import LinkedinIcon from "./components/icons/LinkedinIcon";
+import DownloadResume from "./components/DownloadResume";
 
 export const metadata: Metadata = {
   title: template.replace("%s", "Home"),
@@ -27,10 +27,7 @@ export default function Home() {
             the implementation and development of information’s systems.
           </p>
           <div className="px-8 py-4 w-full">
-            <div className=" w-48 py-3 hover:cursor-pointer shadow-md  justify-center text-center border border-blue-500 hover:text-white hover:bg-blue-500 text-blue-500 inline-flex items-center px-2 rounded-md">
-              <span> View Resume </span>
-              <ArrowDownTrayIcon width={24} className="ml-2" />
-            </div>
+            <DownloadResume />
           </div>
 
           <div className="inline-flex px-8 justify-between">

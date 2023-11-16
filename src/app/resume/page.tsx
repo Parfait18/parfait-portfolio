@@ -1,33 +1,38 @@
 import { Metadata } from "next";
-import { template } from "../constants/title-helper";
+import { template, experiences } from "../utils/constants";
 import Experience from "../components/Experience";
+import PageTitle from "../components/PageTitle";
+import { ExperienceType } from "../utils/types";
 
 export const metadata: Metadata = {
   title: template.replace("%s", "Resume"),
 };
 
 export default function Resume() {
-  return (
-    <main className="flex flex-col items-center justify-between p-24">
-      <h1>Experiences</h1>
+  console.log(experiences);
 
-      <Experience
-        role={"FullStack Dvelopper"}
-        company={"Webcoom"}
-        description={
-          " Anim occaecat velit  ui occaecat amet dolore  ui occaecat amet dolore  ui occaecat amet dolore ui occaecat amet dolore  ui occaecat amet dolore  ui occaecat amet dolore   ui occaecat amet dolore mollit dolor reprehenderit commodo commodo. In exercitation eiusmod qui anim irure tempor consectetur tempor elit incididunt laboris ut."
-        }
-        skills={[
-          "HTML && CSS",
-          "Laravel",
-          "VueJs",
-          "NuxtJs",
-          "Taildwin Css",
-          "Bootstrap",
-          "Django",
-        ]}
-        startDate={"21/12/2021"}
-      />
+  return (
+    <main className="px-8 w-full items-center pt-24 md:pt-4">
+      <div className="text-center p-4">
+        <PageTitle title="Experiences" />
+      </div>
+
+      <div className="md:w-9/12 w-full flex flex-col">
+        {experiences.map((element: ExperienceType, index) => (
+          <>
+            <Experience
+              key={index}
+              role={element.role}
+              company={element.company}
+              endDate={element.endDate}
+              description={element.description}
+              skills={element.skills}
+              startDate={element.startDate}
+            />
+            <br />
+          </>
+        ))}
+      </div>
     </main>
   );
 }

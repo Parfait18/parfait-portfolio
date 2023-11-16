@@ -25,12 +25,12 @@ const MenuIcon = (props: MenuType) => {
       ></div>
 
       <div className="transition delay-700 duration-300 ease-in-out flex z-10 flex-col md:hidden w-11/12 fixed left-4 right-4 top-24 rounded-md shadow-xl bg-white">
-        <div className="h-96 w-full  static shadow-lg shadow-gray-300">
-          <div className="flex flex-col text-left space-y-8">
+        <div className="h-96 w-full  static">
+          <div className="flex flex-col text-left space-y-4 py-4">
             <div>
               <Link
                 href="/"
-                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-500"
               >
                 {" "}
                 Home
@@ -41,7 +41,7 @@ const MenuIcon = (props: MenuType) => {
             </div>
             <div>
               <Link
-                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-500"
                 href="/resume"
               >
                 {" "}
@@ -54,7 +54,7 @@ const MenuIcon = (props: MenuType) => {
 
             <div>
               <Link
-                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-500"
                 href="/services"
               >
                 Services
@@ -66,7 +66,7 @@ const MenuIcon = (props: MenuType) => {
 
             <div>
               <Link
-                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-500"
                 href="/projects"
               >
                 {" "}
@@ -76,9 +76,9 @@ const MenuIcon = (props: MenuType) => {
                 <div className="w-6 ml-3 bg-blue-500 h-1.5 rounded-md"></div>
               )}
             </div>
-            <div>
+            {/* <div>
               <Link
-                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-500"
                 href="/blog"
               >
                 Blog
@@ -86,16 +86,16 @@ const MenuIcon = (props: MenuType) => {
               {pathname == "/blog" && (
                 <div className="w-6 ml-3 bg-blue-500 h-1.5 rounded-md"></div>
               )}
-            </div>
+            </div> */}
             <div>
               <Link
-                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-500"
                 href="/contact"
               >
                 Contact
               </Link>
               {pathname == "/contact" && (
-                <div className="w-6 ml-3 bg-blue-500 h-1.5 rounded-md"></div>
+                <div className=" w-6 ml-3 bg-blue-500 h-1.5 rounded-md"></div>
               )}
             </div>
           </div>
