@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SetStateAction } from "react";
+import { motion } from "framer-motion";
 
 type MenuType = {
   stateChanger: React.Dispatch<SetStateAction<boolean>>;
@@ -11,14 +12,19 @@ const MenuIcon = (props: MenuType) => {
   const pathname = usePathname();
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.6 }}
+    >
       <div
         onClick={() => {
           props.stateChanger(true);
         }}
         className="fixed inset-0 opacity-25 bg-black"
       ></div>
-      <div className="flex z-10 flex-col md:hidden w-11/12 fixed left-4 right-4 top-24 rounded-md shadow-xl bg-white">
+
+      <div className="transition delay-700 duration-300 ease-in-out flex z-10 flex-col md:hidden w-11/12 fixed left-4 right-4 top-24 rounded-md shadow-xl bg-white">
         <div className="h-96 w-full  static shadow-lg shadow-gray-300">
           <div className="flex flex-col text-left space-y-8">
             <div>
@@ -95,7 +101,7 @@ const MenuIcon = (props: MenuType) => {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 export default MenuIcon;
