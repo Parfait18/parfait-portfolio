@@ -13,7 +13,9 @@ const MenuIcon = (props: MenuType) => {
   return (
     <>
       <div
-        onClick={() => props.stateChanger(false)}
+        onClick={() => {
+          props.stateChanger(true);
+        }}
         className="fixed inset-0 opacity-25 bg-black"
       ></div>
       <div className="flex z-10 flex-col md:hidden w-11/12 fixed left-4 right-4 top-24 rounded-md shadow-xl bg-white">
