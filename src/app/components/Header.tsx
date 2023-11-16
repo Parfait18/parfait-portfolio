@@ -10,10 +10,11 @@ import { MutableRefObject, useState } from "react";
 
 export default function Hedaer() {
   const pathname = usePathname();
-  const [closeMenu, setCloseMenu] = useState(true);
+  const [isMenuClosed, setCloseMenu] = useState(true);
+
   return (
     <div>
-      <div className="px-8 py-3 inline-flex justify-between md:static fixed w-full h-18 md:bg-transparent bg-gray-200">
+      <div className="z-10 px-8 py-3 inline-flex justify-between md:static fixed w-full h-18 md:bg-transparent bg-gray-200">
         <div className="inline-flex p-4">
           <div className="my-auto md:text-2xl text-xl">
             <span className="text-gray-600 font-weight-light"> AHOUANTO </span>
@@ -111,8 +112,7 @@ export default function Hedaer() {
         {/* for mobile version */}
         <div
           onClick={() => {
-            setCloseMenu(!closeMenu);
-            console.log("invers", closeMenu);
+            setCloseMenu(!isMenuClosed);
           }}
           className="m-2 shadow-sm w-46 h-46  inline-flex md:hidden p-3 md:bg-gray-600 bg-white hover:cursor-pointer rounded-md"
         >
@@ -121,7 +121,8 @@ export default function Hedaer() {
           <span className="text-blue-500 font-bold">{">"} </span>
         </div>
       </div>
-      {!closeMenu && <MenuIcon />}
+
+      {!isMenuClosed && <MenuIcon stateChanger={setCloseMenu} />}
     </div>
   );
 }

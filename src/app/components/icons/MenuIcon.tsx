@@ -1,16 +1,22 @@
 "use client";
 
-import Image from "next/image";
-import { redirecTo } from "@/app/utils/helpers";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { SetStateAction } from "react";
 
-export default function MenuIcon() {
+type MenuType = {
+  stateChanger: React.Dispatch<SetStateAction<boolean>>;
+};
+const MenuIcon = (props: MenuType) => {
   const pathname = usePathname();
-  const isMenuClosed = false;
+
   return (
     <>
-      <div className="flex flex-col md:hidden w-11/12 fixed left-4 right-4 top-24 rounded-md shadow-xl bg-white">
+      <div
+        onClick={() => props.stateChanger(false)}
+        className="fixed inset-0 opacity-25 bg-black"
+      ></div>
+      <div className="flex z-10 flex-col md:hidden w-11/12 fixed left-4 right-4 top-24 rounded-md shadow-xl bg-white">
         <div className="h-96 w-full  static shadow-lg shadow-gray-300">
           <div className="flex flex-col text-left space-y-8">
             <div>
@@ -89,4 +95,5 @@ export default function MenuIcon() {
       </div>
     </>
   );
-}
+};
+export default MenuIcon;
