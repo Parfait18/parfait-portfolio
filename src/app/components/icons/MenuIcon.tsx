@@ -1,39 +1,18 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
 
-import Link from "next/link";
-
-import { usePathname } from "next/navigation";
 import Image from "next/image";
-import MenuIcon from "./icons/MenuIcon";
-import { MutableRefObject, useState } from "react";
+import { redirecTo } from "@/app/utils/helpers";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-export default function Hedaer() {
+export default function MenuIcon() {
   const pathname = usePathname();
-  const [closeMenu, setCloseMenu] = useState(true);
+  const isMenuClosed = false;
   return (
-    <div>
-      <div className="px-8 py-3 inline-flex justify-between md:static fixed w-full h-18 md:bg-transparent bg-gray-200">
-        <div className="inline-flex p-4">
-          <div className="my-auto md:text-2xl text-xl">
-            <span className="text-gray-600 font-weight-light"> AHOUANTO </span>
-            <span className="text-blue-500"> Parfait S.</span>
-          </div>
-          <div className="relative ml-4">
-            {/* <div className="absolute top-0 right-0 left-0 bottom-0 w-18 -z-50 rounded-full h-18 bg-blue-200 animate-duration-200 animate-pulse animate-infinite border-8 border-double border-blue-100"></div> */}
-            <div className="absolute top-0 right-0 left-0 bottom-0 w-18 -z-50 rounded-full h-18 "></div>
-
-            {/* <Image
-              src="/images/profile.jpg"
-              alt="profile_img"
-              width={40}
-              height={40}
-              className="static mx-2 my-2 z-50 rounded-full w-16 h-16"
-            /> */}
-          </div>
-        </div>
-        <div className="md:inline-flex hidden">
-          <div className="flex my-auto">
+    <>
+      <div className="flex flex-col md:hidden w-11/12 fixed left-4 right-4 top-24 rounded-md shadow-xl bg-white">
+        <div className="h-96 w-full  static shadow-lg shadow-gray-300">
+          <div className="flex flex-col text-left space-y-8">
             <div>
               <Link
                 href="/"
@@ -107,21 +86,7 @@ export default function Hedaer() {
             </div>
           </div>
         </div>
-
-        {/* for mobile version */}
-        <div
-          onClick={() => {
-            setCloseMenu(!closeMenu);
-            console.log("invers", closeMenu);
-          }}
-          className="m-2 shadow-sm w-46 h-46  inline-flex md:hidden p-3 md:bg-gray-600 bg-white hover:cursor-pointer rounded-md"
-        >
-          <span className="text-blue-500 font-bold">{"<"}</span>{" "}
-          <span className="md:text-white text-gray-600 font-bold">{"/"} </span>{" "}
-          <span className="text-blue-500 font-bold">{">"} </span>
-        </div>
       </div>
-      {!closeMenu && <MenuIcon />}
-    </div>
+    </>
   );
 }

@@ -1,8 +1,10 @@
 import Image from "next/image";
 import TypeWriter from "./components/TypeWriter";
 import { Metadata } from "next";
-import { template } from "./helpers/title-helper";
+import { template } from "./constants/title-helper";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
+import GithubIcon from "./components/icons/GithubIcon";
+import LinkedinIcon from "./components/icons/LinkedinIcon";
 
 export const metadata: Metadata = {
   title: template.replace("%s", "Home"),
@@ -32,20 +34,8 @@ export default function Home() {
           </div>
 
           <div className="inline-flex px-8 justify-between">
-            <Image
-              src="/icons/github.svg"
-              alt="github_img"
-              width={50}
-              height={50}
-              className="static mx-2 w-46 h-46  hover:cursor-pointer rounded-full"
-            />
-            <Image
-              src="/icons/linkedin.svg"
-              alt="linkedin_img"
-              width={50}
-              height={50}
-              className="static mx-2 w-46 h-46  hover:cursor-pointer rounded-full"
-            />
+            <GithubIcon />
+            <LinkedinIcon />
           </div>
         </div>
         <div className="md:w-1/2 p-8 w-full  h-96 mx-auto mt-12 relative ">

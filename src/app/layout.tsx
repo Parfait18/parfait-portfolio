@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import { template } from "./helpers/title-helper";
+import { template } from "./constants/title-helper";
 import ParticleBg from "./components/ParticleBg";
 
 const roboto = Roboto({
