@@ -5,7 +5,7 @@ export default function Education(props: EducationType) {
   return (
     <>
       <div className="inline-block md:inline-flex justify-center space-x-2 ">
-        <div className="w-full  bg-gray-600 p-2 space-y-2 flex flex-col rounded-lg">
+        <div className="w-full  bg-gray-600 p-2 space-y-2 flex flex-col rounded-md">
           <div className="w-full p-2 space-x-3 inline-flex">
             <span className="text-md text-gray-300"> {props.level}</span>
             <span className="text-md text-gray-300"> |</span>

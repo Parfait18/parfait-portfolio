@@ -61,3 +61,9 @@ export class Education {
     this.endDate = endDate;
   }
 }
+
+export type ContactForm = {
+  fullname: string;
+  email: string;
+  message: string;
+};
