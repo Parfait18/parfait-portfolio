@@ -5,8 +5,8 @@ import { ContactForm } from "@/app/utils/types";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export default async function POST(req: ContactForm) {
-  const { fullname, email, message } = req;
+export async function POST(req: NextRequest) {
+  const { fullname, email, message }: ContactForm = await req.json();
   try {
     const data = await resend.emails.send({
       from: "parfait.app.dev",
