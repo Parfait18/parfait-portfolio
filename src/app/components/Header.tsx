@@ -14,10 +14,12 @@ export default function Hedaer() {
 
   return (
     <div>
-      <div className="z-10 px-8 py-3 inline-flex justify-between md:static fixed w-full h-18 md:bg-transparent bg-gray-200">
+      <div className="z-10 px-8 py-3 inline-flex justify-between md:static fixed w-full h-18 md:bg-transparent bg-slate-600 ">
         <div className="inline-flex p-4">
           <div className="my-auto md:text-2xl text-xl">
-            <span className="text-gray-600 font-weight-light"> AHOUANTO </span>
+            <span className="md:text-slate-600  text-white font-weight-light">
+              AHOUANTO
+            </span>
             <span className="text-blue-500"> Parfait S.</span>
           </div>
           <div className="relative ml-4">
@@ -114,10 +116,10 @@ export default function Hedaer() {
           onClick={() => {
             setCloseMenu(!isMenuClosed);
           }}
-          className="m-2 shadow-sm w-46 h-46  inline-flex md:hidden p-3 md:bg-gray-600 bg-white hover:cursor-pointer rounded-md"
+          className="m-2 shadow-sm w-46 h-46  inline-flex md:hidden p-3 md:bg-slate-600 bg-white hover:cursor-pointer rounded-md"
         >
           <span className="text-blue-500 font-bold">{"<"}</span>{" "}
-          <span className="md:text-white text-gray-600 font-bold">{"/"} </span>{" "}
+          <span className="md:text-white text-slate-600 font-bold">{"/"} </span>{" "}
           <span className="text-blue-500 font-bold">{">"} </span>
         </div>
       </div>

@@ -30,7 +30,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={
-          roboto.className + "flex flex-col h-screen justify-between bg-gray-10"
+          roboto.className +
+          "flex flex-col h-screen justify-between bg-slate-10"
         }
       >
         <Header />

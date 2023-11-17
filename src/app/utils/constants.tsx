@@ -1,4 +1,11 @@
-import { Experience, ExperienceType, Education, EducationType } from "./types";
+import {
+  Experience,
+  ExperienceType,
+  Education,
+  EducationType,
+  ServiceType,
+  Service,
+} from "./types";
 const template = "%s ← Parfait's Space";
 
 const experiences: Array<ExperienceType> = [
@@ -66,6 +73,22 @@ const educations: Array<EducationType> = [
     etablishement: "Cours de Soutiens Scolaire (CSS) de Cotonou ",
     startDate: "10/2009",
     endDate: "10/2015",
+  }),
+];
+
+const services: Array<ServiceType> = [
+  new Service({
+    serviceName: "Frontend Developement",
+    imageSrc: "/images/frondev.png",
+  }),
+  new Service({
+    serviceName: "Backend Developement",
+    imageSrc: "/images/backdev.png",
+  }),
+
+  new Service({
+    serviceName: "Mobile Developement",
+    imageSrc: "/images/mobiledev.png",
   }),
 ];
 

@@ -15,19 +15,19 @@ export default function Experience(props: ExperienceType) {
             {props.endDate ?? "Today"}
           </span>
         </div>
-        <div className="w-full md:w-4/6  bg-gray-600 p-4 space-y-3 flex flex-col rounded-md">
-          <span className="text-md text-gray-300"> {props.role}</span>
+        <div className="w-full md:w-4/6  bg-slate-600  p-4 space-y-3 flex flex-col rounded-md">
+          <span className="text-md text-slate-300"> {props.role}</span>
           <span className="text-xl text-blue-500 fond-medium">
             {props.company}
           </span>
           {props.description && (
-            <p className="text-sm font-light text-gray-50 text-justify">
+            <p className="text-sm font-light text-slate-50 text-justify">
               {props.description}
             </p>
           )}
 
-          <p className="text-sm font-light text-gray-50 flex flex-wrap ">
-            <span className="font-medium m-2">Stack:</span>
+          <p className="text-sm font-light text-slate-50 flex flex-wrap ">
+            {/* <span className="font-medium m-2">Stack:</span> */}
             {props.skills.map((e, i) => (
               <SkillBadge key={i} skill={e} />
             ))}

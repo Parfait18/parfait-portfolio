@@ -67,3 +67,18 @@ export type ContactForm = {
   email: string;
   message: string;
 };
+
+export type ServiceType = {
+  serviceName: string;
+  imageSrc: string;
+};
+
+export class Service {
+  serviceName: string;
+  imageSrc: string;
+
+  constructor({ serviceName, imageSrc }: ServiceType) {
+    this.serviceName = serviceName;
+    this.imageSrc = imageSrc;
+  }
+}

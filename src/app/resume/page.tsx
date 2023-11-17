@@ -10,8 +10,6 @@ export const metadata: Metadata = {
 };
 
 export default function Resume() {
-  console.log(experiences);
-
   return (
     <main className="px-8 w-full items-center pt-24 md:pt-4">
       <div className="text-left my-8 ">
