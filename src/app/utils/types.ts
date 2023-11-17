@@ -6,6 +6,7 @@ export type ExperienceType = {
   startDate: string;
   endDate?: string;
 };
+
 export class Experience {
   role: string;
   company: string;
@@ -28,5 +29,35 @@ export class Experience {
     this.skills = skills;
     this.startDate = startDate;
     this.endDate = endDate ?? "Today";
+  }
+}
+
+export type EducationType = {
+  level: string;
+  etablishement: string;
+  speciality?: string;
+  startDate: string;
+  endDate?: string;
+};
+
+export class Education {
+  level: string;
+  etablishement: string;
+  speciality?: string;
+  startDate: string;
+  endDate?: string;
+
+  constructor({
+    level,
+    etablishement,
+    speciality,
+    startDate,
+    endDate,
+  }: EducationType) {
+    this.level = level;
+    this.etablishement = etablishement;
+    this.speciality = speciality;
+    this.startDate = startDate;
+    this.endDate = endDate;
   }
 }

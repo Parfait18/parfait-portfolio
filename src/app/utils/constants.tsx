@@ -1,11 +1,11 @@
-import { Experience, ExperienceType } from "./types";
+import { Experience, ExperienceType, Education, EducationType } from "./types";
 const template = "%s ← Parfait's Space";
 
 const experiences: Array<ExperienceType> = [
   new Experience({
-    role: "FullStack Dvelopper",
+    role: "FullStack Developer",
     company: "Open Si",
-    startDate: "21/12/2021",
+    startDate: "12/2021",
     skills: [
       "HTML && CSS",
       "NestJs",
@@ -17,9 +17,9 @@ const experiences: Array<ExperienceType> = [
     ],
   }),
   new Experience({
-    role: "FullStack Dvelopper",
+    role: "FullStack Developer",
     company: "Webcoom",
-    startDate: "21/12/2021",
+    startDate: "12/2021",
     description:
       " Anim occaecar reprehenderit commodo commodo. In exercitation eiusmod qui anim irure tempor consectetur tempor elit incididunt laboris ut.",
     skills: [
@@ -34,15 +34,39 @@ const experiences: Array<ExperienceType> = [
       "Figma",
       "MySql",
     ],
-    endDate: "31/09/2023",
+    endDate: "09/2023",
   }),
   new Experience({
-    role: "Intership Frontend Dvelopper",
+    role: "Intership Frontend Developer",
     company: "C2I-startup",
     startDate: "01/07/2020",
     skills: ["HTML && CSS", "Firebase", "VueJs"],
-    endDate: "31/10/2020",
+    endDate: "10/2020",
   }),
 ];
 
-export { template, experiences };
+const educations: Array<EducationType> = [
+  new Education({
+    level: "Master",
+    etablishement: "Institut de Technlogie de Lokossa",
+    speciality: "Information's System",
+    startDate: "10/2019",
+    endDate: "10/2021",
+  }),
+  new Education({
+    level: "Bachelor",
+    etablishement: "Institut de Mathématique et Sciences Physique (IMSP)",
+    speciality: "Genie Electrique et Informatique Industriel",
+    startDate: "10/2019",
+    endDate: "10/2021",
+  }),
+
+  new Education({
+    level: "Baccalauréat , Série C",
+    etablishement: "Cours de Soutiens Scolaire (CSS) de Cotonou ",
+    startDate: "10/2009",
+    endDate: "10/2015",
+  }),
+];
+
+export { template, experiences, educations };
