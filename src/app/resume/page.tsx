@@ -12,11 +12,11 @@ export const metadata: Metadata = {
 export default function Resume() {
   return (
     <main className="px-8 w-full items-center pt-24 md:pt-4">
-      <div className="text-left my-8 ">
+      <div className="text-center my-8 ">
         <PageTitle title="Education" />
       </div>
       {/* Education */}
-      <div className="md:w-9/12 p-2 w-full flex flex-col">
+      <div className="p-2 w-full grid md:grid-cols-3 gap-4">
         {educations.map((element: EducationType, index) => (
           <>
             <Education
@@ -27,15 +27,14 @@ export default function Resume() {
               speciality={element.speciality}
               startDate={element.startDate}
             />
-            <br />
           </>
         ))}
       </div>
       {/* Experience */}
-      <div className="text-left my-8">
+      <div className="text-center my-8">
         <PageTitle title="Experiences" />
       </div>
-      <div className="md:w-9/12 w-full flex flex-col">
+      <div className="w-full grid md:grid-cols-3 gap-4">
         {experiences.map((element: ExperienceType, index) => (
           <>
             <Experience
@@ -47,7 +46,6 @@ export default function Resume() {
               skills={element.skills}
               startDate={element.startDate}
             />
-            <br />
           </>
         ))}
       </div>

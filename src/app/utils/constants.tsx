@@ -12,23 +12,24 @@ const experiences: Array<ExperienceType> = [
   new Experience({
     role: "FullStack Developer",
     company: "Open Si",
-    startDate: "12/2021",
+    startDate: "November 2023",
     skills: [
       "HTML && CSS",
       "NestJs",
       "VueJs",
       "Tailwind",
-      "Django",
       "Figma",
       "PostgreSQl",
+      "MongoDb",
     ],
   }),
   new Experience({
     role: "FullStack Developer",
     company: "Webcoom",
-    startDate: "12/2021",
-    description:
-      " Anim occaecar reprehenderit commodo commodo. In exercitation eiusmod qui anim irure tempor consectetur tempor elit incididunt laboris ut.",
+    startDate: "December 2021",
+    endDate: "October 2023",
+    // description:
+    //   " Anim occaecar reprehenderit commodo commodo. In exercitation eiusmod qui anim irure tempor consectetur tempor elit incididunt laboris ut.",
     skills: [
       "HTML && CSS",
       "Laravel",
@@ -41,14 +42,13 @@ const experiences: Array<ExperienceType> = [
       "Figma",
       "MySql",
     ],
-    endDate: "09/2023",
   }),
   new Experience({
     role: "Intership Frontend Developer",
     company: "C2I-startup",
-    startDate: "01/07/2020",
+    startDate: "July 2020",
     skills: ["HTML && CSS", "Firebase", "VueJs"],
-    endDate: "10/2020",
+    endDate: "October 2020",
   }),
 ];
 

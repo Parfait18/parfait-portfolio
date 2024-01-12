@@ -30,7 +30,7 @@ const MenuIcon = (props: MenuType) => {
             <div>
               <Link
                 href="/"
-                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-500"
+                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-600"
               >
                 {" "}
                 Home
@@ -41,7 +41,7 @@ const MenuIcon = (props: MenuType) => {
             </div>
             <div>
               <Link
-                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-500"
+                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-600"
                 href="/resume"
               >
                 {" "}
@@ -54,7 +54,7 @@ const MenuIcon = (props: MenuType) => {
 
             <div>
               <Link
-                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-500"
+                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-600"
                 href="/services"
               >
                 Services
@@ -66,7 +66,7 @@ const MenuIcon = (props: MenuType) => {
 
             <div>
               <Link
-                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-500"
+                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-600"
                 href="/projects"
               >
                 {" "}
@@ -78,7 +78,7 @@ const MenuIcon = (props: MenuType) => {
             </div>
             {/* <div>
               <Link
-                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-500"
+                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-600"
                 href="/blog"
               >
                 Blog
@@ -89,7 +89,7 @@ const MenuIcon = (props: MenuType) => {
             </div> */}
             <div>
               <Link
-                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-500"
+                className="w-full transition duration-700 ease-in-out inline-block py-2 px-3  text-blue-600"
                 href="/contact"
               >
                 Contact

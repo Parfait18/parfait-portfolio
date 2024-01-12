@@ -20,7 +20,7 @@ export default function Hedaer() {
             <span className="md:text-slate-600  text-white font-weight-light">
               AHOUANTO
             </span>
-            <span className="text-blue-500"> Parfait S.</span>
+            <span className="text-blue-600"> Parfait S.</span>
           </div>
           <div className="relative ml-4">
             {/* <div className="absolute top-0 right-0 left-0 bottom-0 w-18 -z-50 rounded-full h-18 bg-blue-200 animate-duration-200 animate-pulse animate-infinite border-8 border-double border-blue-100"></div> */}
@@ -36,11 +36,11 @@ export default function Hedaer() {
           </div>
         </div>
         <div className="md:inline-flex hidden">
-          <div className="flex my-auto">
+          <div className="flex my-auto text-md">
             <div>
               <Link
                 href="/"
-                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-600"
               >
                 {" "}
                 Home
@@ -51,7 +51,7 @@ export default function Hedaer() {
             </div>
             <div>
               <Link
-                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-600"
                 href="/resume"
               >
                 {" "}
@@ -64,7 +64,7 @@ export default function Hedaer() {
 
             <div>
               <Link
-                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-600"
                 href="/services"
               >
                 Services
@@ -76,7 +76,7 @@ export default function Hedaer() {
 
             <div>
               <Link
-                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-600"
                 href="/projects"
               >
                 {" "}
@@ -88,7 +88,7 @@ export default function Hedaer() {
             </div>
             {/* <div>
               <Link
-                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-600"
                 href="/blog"
               >
                 Blog
@@ -99,7 +99,7 @@ export default function Hedaer() {
             </div> */}
             <div>
               <Link
-                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-500"
+                className="transition duration-700 ease-in-out inline-block py-1 px-3  text-blue-600"
                 href="/contact"
               >
                 Contact
@@ -118,9 +118,9 @@ export default function Hedaer() {
           }}
           className="m-2 shadow-sm w-46 h-46  inline-flex md:hidden p-3 md:bg-slate-600 bg-white hover:cursor-pointer rounded-md"
         >
-          <span className="text-blue-500 font-bold">{"<"}</span>{" "}
+          <span className="text-blue-600 font-bold">{"<"}</span>{" "}
           <span className="md:text-white text-slate-600 font-bold">{"/"} </span>{" "}
-          <span className="text-blue-500 font-bold">{">"} </span>
+          <span className="text-blue-600 font-bold">{">"} </span>
         </div>
       </div>
 

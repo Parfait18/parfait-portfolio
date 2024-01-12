@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={
           roboto.className +
-          "flex flex-col h-screen justify-between bg-slate-10"
+          "flex flex-col h-screen justify-between bg-slate-50"
         }
       >
         <Header />

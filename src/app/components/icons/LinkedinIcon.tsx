@@ -11,8 +11,8 @@ export default function LinkedinIcon() {
       }
       src="/icons/linkedin.svg"
       alt="linkedin_img"
-      width={50}
-      height={50}
+      width={30}
+      height={30}
       className="static mx-2 w-46 h-46  hover:cursor-pointer rounded-full"
     />
   );

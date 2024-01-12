@@ -10,7 +10,7 @@ export default function DownloadResume() {
           "_target"
         );
       }}
-      className=" w-48 py-3 hover:cursor-pointer shadow-md  justify-center text-center border border-blue-500 hover:text-white hover:bg-blue-500 text-blue-500 inline-flex items-center px-2 rounded-md"
+      className=" w-48 py-3 hover:cursor-pointer shadow-md  justify-center text-center border border-blue-500 hover:text-white hover:bg-blue-500 text-blue-600 inline-flex items-center px-2 rounded-md"
     >
       <span> View Resume </span>
       <ArrowDownTrayIcon width={24} className="ml-2" />
