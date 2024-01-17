@@ -6,7 +6,7 @@ export default function DownloadResume() {
     <div
       onClick={() => {
         window.open(
-          "https://drive.google.com/file/d/1ifpltkJk94k7fHTjTIFFWwu5leJTi3c1/view?usp=sharing",
+          "https://drive.google.com/file/d/1dXL6sB5KKgpYDtAoRnxWKfspttD31n2X/view?usp=sharing",
           "_target"
         );
       }}
