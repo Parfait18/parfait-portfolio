@@ -55,15 +55,15 @@ const experiences: Array<ExperienceType> = [
 const educations: Array<EducationType> = [
   new Education({
     level: "Master",
-    etablishement: "Institut de Technlogie de Lokossa",
+    etablishement: "Institut de Mathématique et Sciences Physique (IMSP)",
     speciality: "Information's System",
     startDate: "10/2019",
     endDate: "10/2021",
   }),
   new Education({
     level: "Bachelor",
-    etablishement: "Institut de Mathématique et Sciences Physique (IMSP)",
-    speciality: "Genie Electrique et Informatique Industriel",
+    etablishement: "Institut de Technlogie de Lokossa (IUT)",
+    speciality: "Genie Electrique et Informatique Industriel (GEII)",
     startDate: "10/2019",
     endDate: "10/2021",
   }),
