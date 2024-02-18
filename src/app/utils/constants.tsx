@@ -17,7 +17,7 @@ const experiences: Array<ExperienceType> = [
       "HTML && CSS",
       "NestJs",
       "VueJs",
-      "Tailwind",
+      "Tailwind CSS",
       "Figma",
       "PostgreSQl",
       "MongoDb",
